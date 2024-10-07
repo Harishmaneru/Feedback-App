@@ -201,7 +201,7 @@ const VideoFeedback = () => {
                     <div className="col-12 col-md-10 col-lg-8">
                         <div className="card shadow-lg border-0 rounded-lg">
                             <div className="card-body p-3 p-md-5">
-                            <h2 class="form-heading mb-4 text-start">Share Your Feedback:</h2>
+                            <h4 class="form-heading mb-4 text-start">Share Your Feedback:</h4>
                                 <form onSubmit={handleSubmit} className="feedback-form">
                                     <div className="row mb-3">
                                         <div className="col-md-6">
