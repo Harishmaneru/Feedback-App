@@ -201,6 +201,7 @@ const VideoFeedback = () => {
                     <div className="col-12 col-md-10 col-lg-8">
                         <div className="card shadow-lg border-0 rounded-lg">
                             <div className="card-body p-3 p-md-5">
+                            <h2 class="form-heading mb-4 text-start">Share Your Feedback:</h2>
                                 <form onSubmit={handleSubmit} className="feedback-form">
                                     <div className="row mb-3">
                                         <div className="col-md-6">
@@ -228,7 +229,7 @@ const VideoFeedback = () => {
                                             value={formData.videoURL || ''}
                                             onChange={handleInputChange}
                                         />
-                                        <label htmlFor="videoURL">Video or Feedback URL<span className="text-danger ms-0">*</span></label>
+                                        <label htmlFor="videoURL">Video or Demo URL<span className="text-danger ms-0">*</span></label>
                                         {formErrors.videoURL && <div className="invalid-feedback">{formErrors.videoURL}</div>}
                                     </div>
 
@@ -271,7 +272,6 @@ const VideoFeedback = () => {
                                             </div>
                                         </div>
                                     )}
-
                                     {/* Feedback Text Area */}
                                     <div className="form-floating mb-4">
                                         <textarea
@@ -292,7 +292,7 @@ const VideoFeedback = () => {
                                     {/* Video Recording Section */}
                                     <div className="card bg-light mb-4 recording-section">
                                         <div className="card-body">
-                                            <p className="lead recording-title">Record your video feedback</p>
+                                            <p className="lead recording-title">Record a quick video to share your comments and feedback</p>
                                             <video
                                                 ref={videoRef}
                                                 className="w-100 mb-3 recording-preview"
