@@ -1,0 +1,83 @@
+.navbar {
+  background-color: #1F4F8F;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.navbar-logo-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-hover-effect {
+  background-color: #2e8b57 !important;
+  margin-top: 20px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.btn-hover-effect:hover {
+  background-color: #267347 !important;
+}
+
+.btn-hover {
+  background-color: #1F4F8F !important;
+  border-color: #1F4F8F !important;
+  transition: background-color 0.3s, border-color 0.3s !important;
+}
+
+.btn-hover:hover {
+  background-color: #1a4378 !important;
+  border-color: #1a4378 !important;
+}
+
+.circle-loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #1F4F8F;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.403);
+  z-index: 9999;
+}
+
+@media (max-width: 576px) {
+  .form-floating > label {
+    font-size: 0.875rem;
+  }
+}
+
+.form-floating > label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  right: 0;
+  max-width: calc(100% - 24px);
+}
