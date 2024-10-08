@@ -151,9 +151,8 @@ const VideoFeedback = () => {
             if (recordedVideo) {
                 submitFormData.append('video', recordedVideo, 'feedback.mp4');
             }
-
-            // Replace with  actual API endpoint
-            fetch('https://api-endpoint.com/feedback', {
+ 
+            fetch('https://videoresponse.onepgr.com:3000/feedback', {
                 method: 'POST',
                 body: submitFormData,
             })
